@@ -1,4 +1,4 @@
-# Nike Shoe Authenticity Comparison
+# Nike Counterfeit Shoe Detector
 
 This project is an early computer vision prototype for comparing authentic and suspected Nike shoe images.
 
