@@ -1,0 +1,7 @@
+af1_ex1,data/raw/authentic_airforce1/real_af1_ex1.png,data/raw/counterfeit_airforce1/fake_af1_ex1.png
+af1_ex2,data/raw/authentic_airforce1/real_af1_ex2.png,data/raw/counterfeit_airforce1/fake_af1_ex2.png
+af1_ex3,data/raw/authentic_airforce1/real_af1_ex3.png,data/raw/counterfeit_airforce1/fake_af1_ex3.png
+af1_ex4,data/raw/authentic_airforce1/real_af1_ex4.png,data/raw/counterfeit_airforce1/fake_af1_ex4.png
+af1_ex5,data/raw/authentic_airforce1/real_af1_ex5.png,data/raw/counterfeit_airforce1/fake_af1_ex5.png
+aj1_ex1,data/raw/authentic_jordan1/real_aj1_ex1.png,data/raw/counterfeit_jordan1/fake_aj1_ex1.png
+aj1_ex2,data/raw/authentic_jordan1/real_aj1_ex2.png,data/raw/counterfeit_jordan1/fake_aj1_ex2.png

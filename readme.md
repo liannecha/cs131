@@ -19,10 +19,10 @@ Run the current comparison script from the project root:
 
 ```bash
 .venv/bin/python preprocess.py \
-  --authentic data/raw/authentic_airforce1/0287.jpg \
-  --suspected data/raw/counterfeit_airforce1/0016.jpg \
-  --output outputs/grabcut_masked_edge_comparison_0287_0016.png \
-  --matches-output outputs/sift_matches_0287_0016.png
+  --authentic data/raw/authentic_airforce1/real_af1_ex1.png \
+  --suspected data/raw/counterfeit_airforce1/fake_af1_ex1.png \
+  --output outputs/af1_ex1_edge_comparison.png \
+  --matches-output outputs/af1_ex1_sift_matches.png
 ```
 
 The script prints an edge overlap score, the number of SIFT keypoints found in each image, and the number of good SIFT matches. It saves the edge comparison image to the path given by `--output` and the keypoint match image to the path given by `--matches-output`.
@@ -49,9 +49,9 @@ Run this script to highlight matched and unmatched SIFT keypoints:
 
 ```bash
 .venv/bin/python analysis.py \
-  --authentic data/raw/authentic_airforce1/0287.jpg \
-  --suspected data/raw/counterfeit_airforce1/0016.jpg \
-  --output outputs/sift_keypoint_analysis_0287_0016.png
+  --authentic data/raw/authentic_airforce1/real_af1_ex1.png \
+  --suspected data/raw/counterfeit_airforce1/fake_af1_ex1.png \
+  --output outputs/af1_ex1_sift_analysis.png
 ```
 
 The analysis image uses green circles for matched keypoints and red circles for strong suspected-image keypoints that did not appear in the strongest SIFT matches. It also includes a results table with metrics, values, weights, and the rough combined authenticity score.
@@ -59,8 +59,8 @@ The analysis image uses green circles for matched keypoints and red circles for 
 The combined score is a prototype similarity score, not a true probability. It is currently weighted as:
 
 - 45% masked edge overlap
-- 20% contour similarity
-- 35% SIFT feature-match quality
+- 35% contour similarity
+- 20% SIFT feature-match quality
 
 ## Current Limitations
 
